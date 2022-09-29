@@ -63,19 +63,30 @@ public class App {
         // secondesdepuis minuit.");
 
         // Exo sur le if
+        // int salaire = 400;
+        // int prime = 250;
+        // int quota = 10;
+
+        // System.out.println("Entrez votre nombre de ventes");
+        // int nombreDeVente = clavier.nextInt();
+        // if (nombreDeVente >= quota) {
+        // salaire = salaire + prime;
+        // }
+        // System.out.println("votre saliare est de : " + salaire);
+
+        // clavier.close();
+        // }
+        // Exo if/else
         int salaire = 400;
         int prime = 250;
         int quota = 10;
-
-        System.out.println("Entrez votre nombre de ventes");
+        System.out.println("Entrez votre nombre de ventes ");
         int nombreDeVente = clavier.nextInt();
         if (nombreDeVente >= quota) {
             salaire = salaire + prime;
+        } else {
+            quota = quota - nombreDeVente;
+            System.out.println("Il vous manque " + quota + " ventes pour atteindre le quota");
         }
-        System.out.println("votre saliare est de : " + salaire);
-
-        clavier.close();
     }
-
 }
-//
