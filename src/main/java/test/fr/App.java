@@ -62,9 +62,19 @@ public class App {
         // System.out.println("Il s'est écoulé " + secondesAvantMinuit + "
         // secondesdepuis minuit.");
 
-        // Exo4
+        // Exo sur le if
+        int salaire = 400;
+        int prime = 250;
+        int quota = 10;
 
-        
+        System.out.println("Entrez votre nombre de ventes");
+        int nombreDeVente = clavier.nextInt();
+        if (nombreDeVente >= quota) {
+            salaire = salaire + prime;
+        }
+        System.out.println("votre saliare est de : " + salaire);
+
+        clavier.close();
     }
 
 }
