@@ -137,5 +137,6 @@ public class App {
             System.out.println("Vous avez perdu");
         }
         System.out.println(numeroDeCase);
+
     }
 }
