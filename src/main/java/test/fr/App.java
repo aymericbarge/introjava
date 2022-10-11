@@ -1,11 +1,16 @@
 package test.fr;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class App {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner clavier = new Scanner(System.in);
+        Random generateur = new Random();
         // System.out.print("Entrez un nom ");
         // String nom1 = clavier.next();
         // System.out.print("Entrez un nombre ");
@@ -74,19 +79,63 @@ public class App {
         // }
         // System.out.println("votre saliare est de : " + salaire);
 
-        // clavier.close();
         // }
         // Exo if/else
-        int salaire = 400;
-        int prime = 250;
-        int quota = 10;
-        System.out.println("Entrez votre nombre de ventes ");
-        int nombreDeVente = clavier.nextInt();
-        if (nombreDeVente >= quota) {
-            salaire = salaire + prime;
-        } else {
-            quota = quota - nombreDeVente;
-            System.out.println("Il vous manque " + quota + " ventes pour atteindre le quota");
+        // int salaire = 400;
+        // int prime = 250;
+        // int quota = 10;
+        // System.out.println("Entrez votre nombre de ventes ");
+        // int nombreDeVente = clavier.nextInt();
+        // if (nombreDeVente >= quota) {
+        // salaire = salaire + prime;
+        // } else {
+        // quota = quota - nombreDeVente;
+        // System.out.println("Il vous manque " + quota + " ventes pour atteindre le
+        // quota");
+        // }
+
+        // // Exo Café crème
+        // System.out.println(" Entrez le nombre de piece de 1 centimes que vous avez.
+        // ");
+        // int piecesDe1 = clavier.nextInt();
+        // System.out.println(" Entrez le nombre de piece de 5 centimes que vous avez.
+        // ");
+        // int piecesDe5 = clavier.nextInt();
+        // System.out.println(" Entrez le nombre de piece de 10 centimes que vous avez.
+        // ");
+        // int piecesDe10 = clavier.nextInt();
+        // System.out.println(" Entrez le nombre de piece de 20 centimes que vous avez.
+        // ");
+        // int piecesDe20 = clavier.nextInt();
+        // System.out.println("Entrez le nombre de piece de 50 centimes que vous avez");
+        // int piecesDe50 = clavier.nextInt();
+        // int piecesJaune = piecesDe1 + piecesDe5 * 5 + piecesDe10 * 10 + piecesDe20 *
+        // 20 + piecesDe50 * 50;
+        // if (piecesJaune < 100) {
+        // int pieceManquante = 100 - piecesJaune;
+        // System.out.println("Il vous manque " + pieceManquante + " cents pour prendre
+        // un café !");
+        // } else if (piecesJaune == 100) {
+        // System.out.println("Vous avez exactement de quoi vous avez vous payer le café
+        // !");
+        // } else if (piecesJaune > 100) {
+        // int piecesEnTrop = piecesJaune - 100;
+        // System.out.println("Il vous restera " + piecesEnTrop + " cents après avoir
+        // pris votre café !");
+        // }
+
+        int victoire = 20;
+        int numeroDeCase = 0;
+        int nbLancer = 5;
+        for (int i = 1; i <= nbLancer; i++) {
+            int lancer = generateur.nextInt(6) + 1;
+            numeroDeCase = numeroDeCase + lancer;
         }
+        if (numeroDeCase == victoire) {
+            System.out.println("Bravo vous avez gagner");
+        } else {
+            System.out.println("Vous avez perdu");
+        }
+        System.out.println(numeroDeCase);
     }
 }
