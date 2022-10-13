@@ -10,7 +10,6 @@ public class App {
      */
     public static void main(String[] args) {
         Scanner clavier = new Scanner(System.in);
-        Random generateur = new Random();
         // System.out.print("Entrez un nom ");
         // String nom1 = clavier.next();
         // System.out.print("Entrez un nombre ");
@@ -122,21 +121,48 @@ public class App {
         // int piecesEnTrop = piecesJaune - 100;
         // System.out.println("Il vous restera " + piecesEnTrop + " cents après avoir
         // pris votre café !");
+        // // }
+        // Random generateur = new Random();
+        // int victoire = 20;
+        // int numeroDeCase = 0;
+        // int nbLancer = 5;
+        // while (numeroDeCase != 20) {
+        // numeroDeCase = 0;
+        // for (int i = 1; i <= nbLancer; i++) {
+        // int lancer = generateur.nextInt(6) + 1;
+        // numeroDeCase = numeroDeCase + lancer;
         // }
-
-        int victoire = 20;
-        int numeroDeCase = 0;
-        int nbLancer = 5;
-        for (int i = 1; i <= nbLancer; i++) {
-            int lancer = generateur.nextInt(6) + 1;
-            numeroDeCase = numeroDeCase + lancer;
-        }
-        if (numeroDeCase == victoire) {
-            System.out.println("Bravo vous avez gagner");
-        } else {
-            System.out.println("Vous avez perdu");
-        }
-        System.out.println(numeroDeCase);
-
+        // if (numeroDeCase == victoire) {
+        // System.out.println("Bravo vous avez gagner");
+        // } else {
+        // System.out.println("Vous avez perdu");
+        // }
+        // System.out.println(numeroDeCase);
+        // TD n°3 Suite 1
+        // for (int i=-4; i<=86;i+=18){
+        // System.out.println(i);
+        // }
+        // suite 2
+        // int count = 0;
+        // int a = 0;
+        // int b = 1;
+        // System.out.print(a + " " + b + " ");
+        // while (count <= 20) {
+        // var current = a + b;
+        // System.out.print(current + " ");
+        // a = b;
+        // b = current;
+        // count++;
+        // }
+        // System.out.println();
+        // suite 3
+        // for (int i = 1; i <= 10; i++) {
+        // System.out.print(i * i + " ");
+        // }
+        // System.out.println();
+        // Suite 4
+        // for (int i = 1; i <= 10; i++) {
+        // System.out.print((int) Math.pow(i, 2) + " ");
+        // }
     }
 }
