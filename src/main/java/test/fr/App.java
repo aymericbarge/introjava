@@ -148,18 +148,17 @@ public class App {
         // int b = 1;
         // System.out.print(a + " " + b + " ");
         // while (count <= 20) {
-        // var current = a + b;
-        // System.out.print(current + " ");
+        // var valeuractuelle = a + b;
+        // System.out.print(valeuractuelle + " ");
         // a = b;
-        // b = current;
+        // b = valeuractuelle;
         // count++;
         // }
         // System.out.println();
-        // suite 3
+        // // suite 3
         // for (int i = 1; i <= 10; i++) {
         // System.out.print(i * i + " ");
         // }
-        // System.out.println();
         // Suite 4
         // for (int i = 1; i <= 10; i++) {
         // System.out.print((int) Math.pow(i, 2) + " ");
@@ -204,41 +203,51 @@ public class App {
         // System.out.print(nombreDeLigne);
         // }
         // System.out.println();
-
         // }
+        // motif 5
+
+        System.out.print("Entrez le nombre de ligne que vous voulez : ");
+        int taille = clavier.nextInt();
+        for (int nombreDeLigne = taille; nombreDeLigne >= taille; nombreDeLigne--) {
+            for (int numberOfColumns = 1; numberOfColumns < nombreDeLigne; numberOfColumns++)
+                System.out.print(" ");
+            for (int nombreDeColonne = nombreDeLigne; nombreDeColonne >= nombreDeLigne; nombreDeColonne--)
+                System.out.print(nombreDeLigne);
+            System.out.println();
+        }
+
+        // td n°3 motif 7 8 9 avec les commande a mettre dans le main
+        // static void motif7(int dep, int end, int nb, boolean reverted, int lines) {
+        // for (int i = 1; i <= lines; i++) {
+        // var it = dep;
+        // var cond = true;
+        // int variable = (nb == 0) ? dep : nb;
+
+        // while (cond) {
+        // if (reverted) {
+        // for (int j = 1; j <= variable; j++) {
+        // System.out.print(it);
+        // }
+        // it--;
+        // cond = (it >= end) ? true : false;
+        // }
+
+        // else {
+        // for (int j = 1; j <= variable; j++) {
+        // System.out.print(it);
+        // }
+        // it++;
+        // cond = (it <= end) ? true : false;
+        // }
+        // if (nb == 0 && reverted)
+        // variable--;
+        // else if (nb == 0 && reverted == false)
+        // variable++;
+        // }
+
+        // System.out.println();
+        // }
+        // }
+
     }
-
-    // td n°3 motif 7 8 9 avec les commande a mettre dans le main
-    // static void motif7(int dep, int end, int nb, boolean reverted, int lines) {
-    // for (int i = 1; i <= lines; i++) {
-    // var it = dep;
-    // var cond = true;
-    // int variable = (nb == 0) ? dep : nb;
-
-    // while (cond) {
-    // if (reverted) {
-    // for (int j = 1; j <= variable; j++) {
-    // System.out.print(it);
-    // }
-    // it--;
-    // cond = (it >= end) ? true : false;
-    // }
-
-    // else {
-    // for (int j = 1; j <= variable; j++) {
-    // System.out.print(it);
-    // }
-    // it++;
-    // cond = (it <= end) ? true : false;
-    // }
-    // if (nb == 0 && reverted)
-    // variable--;
-    // else if (nb == 0 && reverted == false)
-    // variable++;
-    // }
-
-    // System.out.println();
-    // }
-    // }
-
 }
