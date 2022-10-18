@@ -169,5 +169,32 @@ public class App {
         // motif7(9,0,5,true,5); //motif du 8
         // motif7(0,9,0,false,4); //motif du 9
     }
+    // td n°3 motif 7 8 9 avec les commande a mettre dans le main
+    // static void motif7(int dep, int end, int nb, boolean reverted, int lines){
+    // for (int i = 1; i<= lines;i++){
+    // var it = dep;
+    // var cond = true;
+    // int variable = (nb==0)? dep : nb;
+
+    // while (cond){
+    // if (reverted){
+    // for (int j= 1;j<=variable;j++){
+    // System.out.print(it);}
+    // it--;
+    // cond = (it>=end) ? true: false;}
+
+    // else{
+    // for (int j= 1;j<=variable;j++){
+    // System.out.print(it);
+    // }
+    // it++;
+    // cond = (it<=end) ? true: false;
+    // }
+    // if (nb==0 && reverted) variable--;
+    // else if (nb==0 && reverted == false) variable++;}
+
+    // System.out.println();
+    // }
+    // }
 
 }
