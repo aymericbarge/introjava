@@ -195,16 +195,17 @@ public class App {
         // for (int c = 0; c <= r; c++)
         // System.out.print(symbole);
         // System.out.println();
-        // // motif 4
-        System.out.print("Entrez le nombre de ligne que vous voulez ; ");
-        int taille = clavier.nextInt();
-        for (int nombreDeLigne = 1; nombreDeLigne <= taille; nombreDeLigne++) {
-            for (int nombreDeColonne = 1; nombreDeColonne <= nombreDeLigne; nombreDeColonne++) {
-                System.out.print(nombreDeLigne);
-            }
-            System.out.println();
+        // // // motif 4
+        // System.out.print("Entrez le nombre de ligne que vous voulez ; ");
+        // int taille = clavier.nextInt();
+        // for (int nombreDeLigne = 1; nombreDeLigne <= taille; nombreDeLigne++) {
+        // for (int nombreDeColonne = 1; nombreDeColonne <= nombreDeLigne;
+        // nombreDeColonne++) {
+        // System.out.print(nombreDeLigne);
+        // }
+        // System.out.println();
 
-        }
+        // }
     }
 
     // td n°3 motif 7 8 9 avec les commande a mettre dans le main
