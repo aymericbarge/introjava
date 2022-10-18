@@ -164,5 +164,10 @@ public class App {
         // for (int i = 1; i <= 10; i++) {
         // System.out.print((int) Math.pow(i, 2) + " ");
         // }
+        // Avec les commande qui corresponde
+        // motif7(0,9,3,false,3); //motif du 7
+        // motif7(9,0,5,true,5); //motif du 8
+        // motif7(0,9,0,false,4); //motif du 9
     }
+
 }
